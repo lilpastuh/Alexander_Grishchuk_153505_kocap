@@ -1,0 +1,1 @@
+for(inti=1;i<=List.GetCount);i++){NodeDel=List.GetNode(i);if(AverageMark>(Del.mathMark+Del.rusMark+Del.physMark)/3){List.Del(i);}}rewrite(;Clear4(););

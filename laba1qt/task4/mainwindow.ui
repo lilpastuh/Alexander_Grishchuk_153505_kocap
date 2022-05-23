@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> 
+background-color: rgb(235, 255, 222);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>10</y>
+      <width>431</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(215, 224, 255);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>          &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;INFORMAION ABOUT BOOKS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Author</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_name">
+       <property name="styleSheet">
+        <string notr="true">  
+background-color: rgb(251, 255, 184);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Year of publication</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="spinBox_year">
+       <property name="styleSheet">
+        <string notr="true"> 
+background-color: rgb(183, 190, 255);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10000</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Book name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_book">
+       <property name="styleSheet">
+        <string notr="true">  
+background-color: rgb(251, 255, 184);
+ 
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Publishing house</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_housepubl">
+       <property name="styleSheet">
+        <string notr="true">  
+background-color: rgb(251, 255, 184);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Number of pages</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="spinBox_num">
+       <property name="styleSheet">
+        <string notr="true"> 
+background-color: rgb(183, 190, 255);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10000</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2">
+      <widget class="QPushButton" name="pushButton_addbook">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(99, 174, 255);
+ 
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>ADD BOOK </string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_9"/>
+     </item>
+     <item row="8" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>851</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 255);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>160</number>
+    </attribute>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>300</y>
+      <width>521</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+background-color: rgb(255, 239, 247);
+background-color: rgb(247, 213, 255);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>483</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="lineEdit_samepub">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(225, 230, 255);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton_keyword">
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 248, 196);</string>
+        </property>
+        <property name="text">
+         <string>SEARCH BY KEYWORD</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_samepublis">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;dsf&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 248, 196);</string>
+        </property>
+        <property name="text">
+         <string>SHOW ALL BOOKS OF THE SAME PUBLISHER</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEdit_keywordsearch">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(225, 230, 255);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_findbynsme">
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 248, 196);</string>
+        </property>
+        <property name="text">
+         <string>FIND A BOOK BY NAME OR AUTHOR</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_findbyname">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(225, 230, 255);
+color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>451</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0" rowspan="2">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_edit">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+color: rgb(0, 0, 0); 
+ 
+background-color: rgb(168, 255, 153);</string>
+          </property>
+          <property name="text">
+           <string>EDIT BOOK </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_delete">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+color: rgb(0, 0, 0); 
+ 
+background-color: rgb(168, 255, 153);
+ </string>
+          </property>
+          <property name="text">
+           <string>DELITE BOOK </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QSpinBox" name="spinBox_edit">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+background-color: rgb(226, 193, 255);
+ 
+color: rgb(0, 0, 0); 
+  </string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QSpinBox" name="spinBox_delete">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+background-color: rgb(226, 193, 255);
+ 
+color: rgb(0, 0, 0); 
+  </string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_addinffromfile">
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+color: rgb(0, 0, 0); 
+ 
+background-color: rgb(168, 255, 153);</string>
+        </property>
+        <property name="text">
+         <string> ADD INFORM FROM FILE </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_showall">
+        <property name="styleSheet">
+         <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+color: rgb(0, 0, 0); 
+ 
+background-color: rgb(168, 255, 153);</string>
+        </property>
+        <property name="text">
+         <string>SHOW ALL</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton_sortbyyear">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
+       <width>251</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 8pt &quot;Segoe Script&quot;;
+ 
+color: rgb(0, 0, 0); 
+ 
+background-color: rgb(168, 255, 153);</string>
+     </property>
+     <property name="text">
+      <string> SORT BY YEAR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>60</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+color: rgb(0, 0, 0);
+font: 11pt &quot;Segoe Script&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;MENU&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>690</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> 
+background-color: rgb(243, 255, 211);
+font: 700 9pt &quot;Segoe Script&quot;;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>EXIT </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

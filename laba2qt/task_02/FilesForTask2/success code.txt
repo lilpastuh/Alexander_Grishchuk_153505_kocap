@@ -1,0 +1,12 @@
+    for (int i = 1; i <= List.GetCount(); i++) {
+     Node Del = List.GetNode(i);
+
+        if(AverageMark > (Del.mathMark + Del.rusMark + Del.physMark) / 3){
+
+            List.Del(i);
+
+        }
+    }
+      rewrite();
+
+    Clear4();
